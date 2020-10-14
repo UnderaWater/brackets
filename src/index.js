@@ -1,7 +1,6 @@
 module.exports = function check(str, bracketsConfig) {
   const arr = [];
-  const brackets = {};
-  bracketsConfig.forEach(item => brackets[`${item[0]}`] = item[1]);
+  const brackets = Object.fromEntries(bracketsConfig);
 
   for (let i = 0; i < str.length; i++) {
       let current = str[i];

@@ -9,5 +9,5 @@ module.exports = function check(str, bracketsConfig) {
       else if (brackets[current]) arr.push(brackets[current]);
       else return false;
   }
-  return (stack.length) ? false : true
+  return (arr.length) ? false : true
 }
